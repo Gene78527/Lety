@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Dulce Lety</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ffe4e1, #ffccff);
+            color: #333;
+        }
+
+        header {
+            background-color: #ff77a0;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ff4f84;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #fff;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x400.png?text=Delicious+Pastries') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            flex-direction: column; /* Añadido para alinear verticalmente */
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            color: #fff;
+            margin: 0;
+        }
+
+        .hero img {
+            margin-top: 20px; /* Espacio entre el texto y la imagen */
+            width: 300px; /* Ajusta el ancho según sea necesario */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .producto {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 250px;
+        }
+
+        .producto img {
+            width: 100%;
+            height: auto;
+        }
+
+        .producto h3 {
+            background-color: #ffccff;
+            margin: 0;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #ff77a0;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+        }
+
+        #menu-p {
+            max-width: 1000px;
+            min-height: 130px;
+            background: green;
+            margin: 0 auto;
+        }
+
+        /**MENU-HORIZONTAL**/
+        #menu-h {
+            max-width: 1000px;
+            min-height: 90px;
+            background: #c370aa;
+            margin: 0 auto;
+        }
+
+        #menu-h ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        #menu-h a {
+            color: #fff;
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            background: #e7a5d3;
+            font-family: serif;
+            font-size: 20px;
+        }
+
+        #menu-h a:hover {
+            background: #FFD1DC;
+        }
+
+        #menu-h ul ul {
+            display: none;
+            position: absolute;
+        }
+
+        #menu-h ul li:hover ul {
+            display: block;
+        }
+
+        #menu-v img {
+            width: 24px;
+            height: auto;
+            margin-right: 10px;
+        }
+          #img a {
+            display: block;
+            width: 1000px;
+            height: 700px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pastelería Dulce Lety</h1>
+        <nav>
+            <nav id="menu-h">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes somos.html">Nosotros</a>
+                        <ul class="submenu">
+                            <li><a href="nosotros1.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="vision.html">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="h.html">Productos</a></li>
+                    <li><a href="ofertaas.html">Contáctenos</a></li>
+                    <li><a href="ofertaas.html">Formulario</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>¡Los mejores pasteles de la ciudad!</h2>
+        <img src="https://www.pastelerialety.com/dw/image/v2/BJQR_PRD/on/demandware.static/-/Sites-PasteleriaLety-Library/default/dw18dad205/banner-616x316-roscaslety.png" alt="a">
+    </div>
+
+    <section id="productos">
+        <h2>Nuestros Productos más Pedidos!</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.BL77qavTadN92NVsEeNezwHaHa?rs=1&pid=ImgDetMain" alt="Pastel 2">
+                <h3>Pastel de Fresa</h3>
+            </div>
+            <div class="producto">
+                <img src="https://www.pastelerialety.com/dw/image/v2/BJQR_PRD/on/demandware.static/-/Sites-PasteleriaLety-Library/default/dw80e25847/Nuvella%203.png" alt="Pastel 2">
+                <h3>Pastel de Chocolate</h3>
+            </div>
+            <div class="producto">
+                <img src="https://pbs.twimg.com/media/EOMtmhAXUAE3Ip-.jpg" alt="Pastel 4">
+                <h3>Pastel Tres Leches</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Pastelería Dulce Lety. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

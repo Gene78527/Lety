@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario sobre un pedido</title>
+    <style>
+        body {
+            background-color: #ff77a0; 
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333; 
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            background-color: #f2f2f2; 
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #ff4f84; 
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #666;
+        }
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333; 
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+                      ul.menu {
+            list-style-type: none;
+            padding: 0;
+            display: flex; 
+            justify-content: center; 
+        }
+
+        ul.menu li {
+            margin: 0 10px;
+        }
+
+        ul.menu li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            background: #333;
+            border-radius: 5px;
+        }
+
+        ul.menu li a:hover {
+            background: #326038;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario de Pedido</h1>
+    <form action="#" method="POST">
+        <label for="cedula">Nombre:</label>
+        <input type="text" id="cedula" name="cedula" required>
+
+        <label for="nombre">Nombre pastel:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Dirección:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="direccion">Rebanadas:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+        <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+
+
+</body>
+</html>
